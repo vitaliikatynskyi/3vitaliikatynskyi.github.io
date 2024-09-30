@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота №3</title> 
+  <link href="css/style1.css" rel="stylesheet"> 
+  <style>
+    p {
+      color: #000;
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .head {
+      margin-top: 200px;
+      text-align: center;
+      font-style: italic;
+      font-size: 50px;
+    }
+    .img-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .img-style {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+    .list_custom, .list_img {
+      list-style-type: none;
+      padding: 0;
+    }
+    .list_custom li, .list_img li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .list_img li img {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<header>
+  <div class="container">
+    <a href="/" class="logo">Menu</a>
+    <nav>
+      <ul>
+        <li><a href="#head">Головна</a></li>
+        <li><a href="#weather">Погода</a></li>
+        <li><a href="page12.html">тестова сторінка</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<body>
+  <h1 style="color: blue; text-align: center;" id="head">Лабораторна робота №3</h1>
+  <p style="color: green; margin: 20px;">Дана веб-сторінка буде про погоду</p>
+  <div class="img-text-container">
+  <img src="images/depositphotos_211497746-stock-photo-weather-forecast-background-variety-weather.jpg" alt="погода" class="img-style">
+  </div><p>На цьому сайті ви знайдете найактуальнішу і надійну інформацію про погодні умови у вашому регіоні та у всьому світі.</p>
+  <p>Ми працюємо на користь того, щоб ви завжди були готові до всіх природних явищ, які можуть вплинути на вашу діяльність.</p>
+  <p>Доброго дня, дорогі відвідувачі! Ми пропонуємо вам останню інформацію про погоду в місті Львові на сьогодні.</p>
+  <p class="head">Погода у Львові</p>
+  <table class="table_style">
+    <tr>
+      <th>       </th>
+      <th>       </th>
+      <th>Т С</th>
+      <th>атмосферний тиск</th>
+      <th>вітер м\с</th>
+      <th>вологість</th>
+    </tr>
+    <tr>
+      <td>6:00</td>
+      <td><img src="images/free-icon-cloudy-1163661.png" alt="сонце і хмари" style="width:70px;height:60px;"></td>
+      <td>+5</td>
+      <th>765</th>
+      <th>13</th>
+      <th>89</th>
+    </tr>
+    <tr>
+      <td>9:00</td>
+      <td><img src="images/free-icon-cloudy-1163661.png" alt="сонце і хмари" style="width:70px;height:60px;"></td>
+      <td>+6</td>
+      <th>735</th>
+      <th>11</th>
+      <th>90</th>
+    </tr>
+    <tr>
+      <td>12:00</td>
+      <td><img src="images/free-icon-sun-4814268.png" alt="сонце" style="width:70px;height:60px;"></td>
+      <td>+9</td>
+      <th>798</th>
+      <th>18</th>
+      <th>83</th>
+    </tr>
+    <tr>
+      <td>15:00</td>
+      <td><img src="images/free-icon-weather-app-3767039.png" alt="дощ" style="width:70px;height:60px;"></td>
+      <td>+9</td>
+      <th>798</th>
+      <th>20</th>
+      <th>85</th>
+    </tr>   
+  </table>
+  <p id="weather">Погоду можна перегляеути на <a href="https://meteo.ua/ua/44/lvov" target="_blank">сайті</a>, там можна побачити прогноз погоди на настпний тиждень.</p>
+  <p>У найближчі кількість днів днів очікується дощ, температура від 9 до 17.</p>
+  <p>Не забудьте приготуватися до змін у погоді та взяти з собою необхідний одяг і аксесуари для комфортного перебування на вулиці. 
+  Ми рекомендуємо періодично оновлювати цю сторінку, щоб слідкувати за актуальною інформацією про погоду. 
+  Будьте обережні та насолоджуйтесь днем!</p>
+  <h2>Список</h2>
+  <p>можлива погода</p>
+  <ul class="list_img" style="display: flex; justify-content: center; gap: 20px;">
+      <li><img src="images/free-icon-cloudy-1163661.png" alt="сонце і хмари" class="image_list"> хмарно</li>
+
+    <li><img src="images/free-icon-weather-app-3767039.png" alt="дощ" class="image_list"> дощ</li>
+
+    <li><img src="images/free-icon-sun-4814268.png" alt="сонце і хмари" class="image_list"> сонце</li>
+  </ul>
+</body>
+</html>
